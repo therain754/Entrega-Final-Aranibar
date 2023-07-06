@@ -1,0 +1,15 @@
+* {
+  margin: 10;
+  padding: 10;
+}
+
+.cabeza {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.logo {
+  height: 60px;
+  border-right: 30px solid transparent;
+}/*# sourceMappingURL=style.css.map */
