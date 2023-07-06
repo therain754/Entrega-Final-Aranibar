@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabeza">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <img src="./src/logo.png" alt="logo" height="70px" class="border-end border-5 border-white d-inline-block align-text-top">
+              <a class="navbar-brand" href="#">Happy Aerlines</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Viajes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Ayuda</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="novedades">
+        <div class="container">
+            <h2 class="titulo-novedades">Novedades</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="sub-titulo">Novedad1</h3>
+                    <img src="./src/novedad.jpg" alt="Imagen de la novedad" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolore repellendus aspernatur expedita accusamus a odit harum quaerat, blanditiis suscipit nobis ducimus dolores nemo fugit cum ab quam dolor neque.</p>
+                    <button class="btn btn-primary">Saber más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/novedad.jpg" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la primera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/novedad.jpg" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la segunda diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./src/novedad.jpg" class="d-block w-50" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Etiqueta de la tercera diapositiva</h5>
+              <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+    <div class="container consejos-continer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="consejo-box">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possim</p>
+                    <img src="img.png" alt="Imagen de consejo" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="consejo-box">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possim</p>
+                    <img src="#" alt="Imagen de consejo" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="consejo-box">
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possim</p>
+                    <img src="#" alt="Imagen de consejo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container buscar-vuelo">
+        <form action="/busqueda" method="POST">
+            <div class="selection">
+                <h4>Planifiquemos tu próximo viaje</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dirreccion" id="ida" value="ida">
+                    <label class="form-check-label" for="ida">Ida</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dirreccion" id="ida_vuelta" value="ida_vuelta">
+                    <label class="form-check-label" for="ida_vuelta">Ida y vuelta</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="salida-box">
+                        <label for="desde" class="indicacion">Desde</label>
+                        <select name="desde" id="desde" class="form-select">
+                            <option value="lugar_1">Lugar 1</option>
+                            <option value="lugar_2">Lugar 2</option>
+                            <option value="lugar_3">Lugar 3</option>
+                            <option value="lugar_4">Lugar 4</option>
+                            <option value="lugar_5">Lugar 5</option>
+                            <option value="lugar_6">Lugar 6</option>
+                            <option value="lugar_7">Lugar 7</option>
+                            <option value="lugar_8">Lugar 8</option>
+                            <option value="lugar_9">Lugar 9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hacia-box">
+                        <label for="hacia" class="indicacion">Hacia</label>
+                        <select name="hacia" id="hacia" class="form-select">
+                            <option value="lugar_1">Lugar 1</option>
+                            <option value="lugar_2">Lugar 2</option>
+                            <option value="lugar_3">Lugar 3</option>
+                            <option value="lugar_4">Lugar 4</option>
+                            <option value="lugar_5">Lugar 5</option>
+                            <option value="lugar_6">Lugar 6</option>
+                            <option value="lugar_7">Lugar 7</option>
+                            <option value="lugar_8">Lugar 8</option>
+                            <option value="lugar_9">Lugar 9</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="num-box">
+                        <label for="pasajeros" class="indicacion">Número de pasajeros</label>
+                        <select name="pasajeros" id="pasajeros" class="form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fecha-box">
+                        <label for="fecha_salida">Fecha de Salida</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="dia" class="indicacion">Día</label>
+                                <select name="dia" id="dia" class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="mes" class="indicacion">Mes</label>
+                                <select name="mes" id="mes" class="form-select">
+                                    <option value="1">Enero</option>
+                                    <option value="2">Febrero</option>
+                                    <option value="3">Marzo</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Mayo</option>
+                                    <option value="6">Junio</option>
+                                    <option value="7">Julio</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Septiembre</option>
+                                    <option value="10">Octubre</option>
+                                    <option value="11">Noviembre</option>
+                                    <option value="12">Diciembre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="año" class="indicacion">Año</label>
+                                <select name="año" id="año" class="form-select">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="pie">
+        <div class="container">
+            <p>Todos los derechos reservados &copy; 2023 Happy Aerlines</p>
+        </div>
+    </footer>
+
+    <script src="./bootstrap-5.3.0/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
