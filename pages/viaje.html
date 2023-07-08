@@ -4,150 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     <header class="cabeza">
-        <nav class="menu">
-            <ul class="menu-links">
-                <li class="logo-box">
-                    <img src="./src/logo.png" alt="logo" class="logo">
-                    <a href="./index.html"><h1>X Aerolinia</h1></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info bg-opacity-25">
+            <div class="container-fluid">
+                <img src="./src/logo.png" alt="logo" class="logo border-end border-5 border-white d-inline-block align-text-top">
+              <a class="navbar-brand" href="#">Happy Aerlines</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/viaje.html">Viajes</a>
                 </li>
-                <li class="link"><a href="./viaje.html">Viaje</a></li>
-                <li class="link"><a href="./informacion.html">informacion del viaje</a></li>
-                <li class="link"><a href="./ofertas.html">Ofertas</a></li>
-                <li class="link"><a href="./ayuda.html">Ayuda</a></li>
-            </ul>
-        </nav>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/informacion.html">Informacion</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/ofertas.html">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/pages/ayuda.html">Ayuda</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <div class="buscar-vuelo">
+    <div class="container buscar-vuelo">
         <form action="/busqueda" method="POST">
-            <h4>Planifiquemos tu proximo viaje</h3>
-            <input type="radio" name="dirreccion" value="ida"> Ida
-            <input type="radio" name="dirreccion" value="ida_vuelta"> Ida y vuelta
-            <p class="indicacion">Desde</p>
-            <select name="desde">
-                <option value="lugar_1">Lugar 1</option>
-                <option value="lugar_2">Lugar 2</option>
-                <option value="lugar_3">Lugar 3</option>
-                <option value="lugar_4">Lugar 4</option>
-                <option value="lugar_5">Lugar 5</option>
-                <option value="lugar_6">Lugar 6</option>
-                <option value="lugar_7">Lugar 7</option>
-                <option value="lugar_8">Lugar 8</option>
-                <option value="lugar_9">Lugar 9</option>
-              </select>
-            <p class="indicacion">Hacia</p>
-            <select name="hacia">
-                <option value="lugar_1">Lugar 1</option>
-                <option value="lugar_2">Lugar 2</option>
-                <option value="lugar_3">Lugar 3</option>
-                <option value="lugar_4">Lugar 4</option>
-                <option value="lugar_5">Lugar 5</option>
-                <option value="lugar_6">Lugar 6</option>
-                <option value="lugar_7">Lugar 7</option>
-                <option value="lugar_8">Lugar 8</option>
-                <option value="lugar_9">Lugar 9</option>
-              </select>
-            <P class="indicacion">Numero de pasajeros</P>
-            <select name="pasajeros">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-              </select>
-
-            <div class="fecha">
-                <P>Fecha de Salida</P>
-                <div class="dia">
-                    <p class="indicacion">Dia</p>
-                    <select name="dia">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    </select>
+            <div class="selection">
+                <h4>Planifiquemos tu próximo viaje</h4>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dirreccion" id="ida" value="ida">
+                    <label class="form-check-label" for="ida">Ida</label>
                 </div>
-
-                <div class="mes">
-                    <p class="indicacion">Mes</p>
-                    <select name="mes">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                </div>
-
-                <div class="anio">
-                    <p class="indicacion">Anio</p>
-                    <select name="anio">
-                        <option value="23">2023</option>
-                        <option value="24">2024</option>
-                        <option value="25">2025</option>
-                    </select>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="dirreccion" id="ida_vuelta" value="ida_vuelta">
+                    <label class="form-check-label" for="ida_vuelta">Ida y vuelta</label>
                 </div>
             </div>
-
-            <input type="submit" value="Buscar">
-          </form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="salida-box">
+                        <label for="desde" class="indicacion">Desde</label>
+                        <select name="desde" id="desde" class="form-select">
+                            <option value="lugar_1">Lugar 1</option>
+                            <option value="lugar_2">Lugar 2</option>
+                            <option value="lugar_3">Lugar 3</option>
+                            <option value="lugar_4">Lugar 4</option>
+                            <option value="lugar_5">Lugar 5</option>
+                            <option value="lugar_6">Lugar 6</option>
+                            <option value="lugar_7">Lugar 7</option>
+                            <option value="lugar_8">Lugar 8</option>
+                            <option value="lugar_9">Lugar 9</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hacia-box">
+                        <label for="hacia" class="indicacion">Hacia</label>
+                        <select name="hacia" id="hacia" class="form-select">
+                            <option value="lugar_1">Lugar 1</option>
+                            <option value="lugar_2">Lugar 2</option>
+                            <option value="lugar_3">Lugar 3</option>
+                            <option value="lugar_4">Lugar 4</option>
+                            <option value="lugar_5">Lugar 5</option>
+                            <option value="lugar_6">Lugar 6</option>
+                            <option value="lugar_7">Lugar 7</option>
+                            <option value="lugar_8">Lugar 8</option>
+                            <option value="lugar_9">Lugar 9</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="num-box">
+                        <label for="pasajeros" class="indicacion">Número de pasajeros</label>
+                        <select name="pasajeros" id="pasajeros" class="form-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fecha-box">
+                        <label for="fecha_salida">Fecha de Salida</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="dia" class="indicacion">Día</label>
+                                <select name="dia" id="dia" class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="mes" class="indicacion">Mes</label>
+                                <select name="mes" id="mes" class="form-select">
+                                    <option value="1">Enero</option>
+                                    <option value="2">Febrero</option>
+                                    <option value="3">Marzo</option>
+                                    <option value="4">Abril</option>
+                                    <option value="5">Mayo</option>
+                                    <option value="6">Junio</option>
+                                    <option value="7">Julio</option>
+                                    <option value="8">Agosto</option>
+                                    <option value="9">Septiembre</option>
+                                    <option value="10">Octubre</option>
+                                    <option value="11">Noviembre</option>
+                                    <option value="12">Diciembre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="año" class="indicacion">Año</label>
+                                <select name="año" id="año" class="form-select">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </form>
     </div>
 
+    <footer class="pie">
+        <div class="container">
+            <p>Todos los derechos reservados &copy; 2023 Happy Aerlines</p>
+        </div>
+    </footer>
 
-    <div class="hoteles">
-
-        
-    </div>
-
-
-    <div class="alquilar">
-
-
-    </div>
-
-    <div class="paquetes">
-
-
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
