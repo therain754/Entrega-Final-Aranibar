@@ -1,3 +1,6 @@
+@import "/scss/style.scss";
+
+
 * {
 	margin: 10;
 	padding: 10;
@@ -9,7 +12,3 @@
 	background-color: white;
 }
 
-.logo {
-	height: 60px;
-	border-right: 30px solid transparent;
-}

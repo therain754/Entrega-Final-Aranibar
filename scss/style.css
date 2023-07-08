@@ -1,4 +1,3 @@
-@import "/css/style.css";
 * {
   margin: 10;
   padding: 10;
@@ -8,9 +7,17 @@
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 100;
+}
+.cabeza .logo {
+  width: 70px;
+  height: 70px;
 }
 
-.logo {
-  height: 60px;
-  border-right: 30px solid transparent;
+.novedades {
+  height: 200px;
+}
+
+.consejos-container {
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
