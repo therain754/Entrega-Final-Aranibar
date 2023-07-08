@@ -1,5 +1,3 @@
-@import "/css/style.css";
-
 
 * {
 	margin: 10;
@@ -10,12 +8,21 @@
 	position: sticky;
 	top: 0;
 	background-color: white;
+	z-index: 100;
+	.logo {
+		width: 70px;
+		height: 70px;
+	}
 }
 
-.logo {
-	height: 60px;
-	border-right: 30px solid transparent;
+.novedades {
+	height: 200px;
 }
 
-// Path: comentartio x
-// otro comentario
+.consejos-container {
+	height: 300px;
+
+}
+
+
+
