@@ -15,7 +15,14 @@
 }
 
 .novedades {
-  height: 200px;
+  height: 400px;
+  background-color: #f2f2f2;
+}
+.novedades h5 {
+  color: black;
+}
+.novedades p {
+  color: black;
 }
 
 .consejos-container {
