@@ -1,14 +1,30 @@
-@import "/scss/style.scss";
-
-
 * {
-	margin: 10;
-	padding: 10;
+  margin: 10;
+  padding: 10;
 }
 
 .cabeza {
-	position: sticky;
-	top: 0;
-	background-color: white;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+.cabeza .logo {
+  width: 70px;
+  height: 70px;
 }
 
+.novedades {
+  height: 400px;
+  background-color: #f2f2f2;
+}
+.novedades h5 {
+  color: black;
+}
+.novedades p {
+  color: black;
+}
+
+.consejos-container {
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */
