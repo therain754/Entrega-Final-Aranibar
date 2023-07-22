@@ -1,6 +1,6 @@
 * {
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
 }
 
 .cabeza {
@@ -16,7 +16,7 @@
 
 .novedades {
   height: 400px;
-  background-color: #1bf0ff;
+  background-color: #0dcaf0;
 }
 .novedades h5 {
   color: black;

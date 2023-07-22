@@ -1,8 +1,8 @@
 @import "partials/_variables.scss";
 
 * {
-	margin: 10;
-	padding: 10;
+	margin: 0;
+	padding: 0;
 }
 
 .cabeza {
@@ -17,19 +17,145 @@
 }
 
 .novedades {
-	height: 400px;
-	background-color: #1bf0ff;
-	h5 {
-		color: black;
+	img {
+		width: 100%;
+		height: 100%;
 	}
-	p {
-		color: black;
+	.des {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-120%, -100%);
+		color: white;
+		font-size: 30px;
+		font-weight: bold;
 	}
 }
 
-.consejos-container {
-	height: 300px;
+.consejos {
+	height: 80vh;
+	top: 42px;
+	position: relative;
+	.consejo-box {
+		width: 100%;
+		height: 360px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $cian_1;
+		border-radius: 25px;
+		h4 {
+			position: relative;
+			top: 24px;
+			height: 38px;
+			font-size: 25px;
+			font-weight: bold;
+			color: $blue_1;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		p {
+			position: relative;
+			width: 80%;
+			height: 28px;
+			font-size: 18px;
+			font-family: "Roboto", sans-serif;
+			color: #000000;
+			text-align: justify;
+		}
+		svg {
+			position: relative;
+			top: 90px;
+			width: 148px;
+			height: 148px;
+		}
+	}
+	
+}
 
+@media screen and (max-width: 992px) {
+	.consejos {
+		width: 80%;
+		height: 330px;
+		top: 28px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		h4 {
+			position: relative;
+			left: 10%;
+			top: -30px;
+			height: 18px;
+			font-size: 18px;
+			font-weight: bold;
+			color: $blue_2;
+			text-align: center;
+			margin-bottom: 0px;
+		}
+		p {
+			position: relative;
+			top: -10px;
+			width: 80%;
+			left: 10%;
+			height: 20px;
+			font-size: 13px;
+			color: #000000;
+			text-align: justify;
+		}
+		svg {
+			position: relative;
+			top: 58px;
+			left: 10%;
+			width: 148px;
+			height: 148px;
+		}
+	}
+	
+}
+
+
+
+@media screen and (max-width: 768px) {
+	.cabeza {
+		.logo {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	.novedades {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.consejos {
+		position: relative;
+		top: 28px;
+		h4 {
+			position: relative;
+			font-weight: bold;
+			color: $blue_2;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		p {
+			position: relative;
+			width: 80%;
+			left: 10%;
+			height: 20px;
+			font-size: 13px;
+			color: #000000;
+			text-align: justify;
+		}
+		svg {
+			position: relative;
+			top: 12vh;
+			left: 10%;
+			width: 148px;
+			height: 148px;
+		}
+	}
+	
 }
 
 
