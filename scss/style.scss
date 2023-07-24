@@ -42,7 +42,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: $cian_1;
+		background-color: $bg_2;
 		border-radius: 25px;
 		h4 {
 			position: relative;
@@ -50,7 +50,7 @@
 			height: 38px;
 			font-size: 25px;
 			font-weight: bold;
-			color: $blue_2;
+			color: #ffffff;
 			text-align: center;
 			margin-bottom: 30px;
 		}
@@ -60,7 +60,7 @@
 			height: 28px;
 			font-size: 18px;
 			font-family: "Roboto", sans-serif;
-			color: #000000;
+			color: #ffffff;
 			text-align: justify;
 		}
 		svg {
@@ -68,7 +68,7 @@
 			top: 90px;
 			width: 148px;
 			height: 148px;
-			color: $blue_2;
+			color: #ffffff;
 		}
 	}
 }
@@ -80,7 +80,7 @@
 	border-bottom: 48px solid transparent;
 	.box {
 		position: relative;
-		background-color: $cian_1;
+		background-color: $bg_1;
 		border-radius: 25px;
 		height: 120%;
 		width: 85%;
@@ -91,8 +91,15 @@
 			height: 100%;
 			font-size: 32px;
 			font-weight: bold;
-			color: $blue_2;
+			color: #ffffff;
 			text-align: center;
+		}
+		form {
+			display: flex;
+			.selection {
+				position: relative;
+				display: inline-block;
+			}
 		}
 	}
 }
@@ -117,7 +124,7 @@ footer {
 			height: 18px;
 			font-size: 18px;
 			font-weight: bold;
-			color: $blue_2;
+			color: #ffffff;
 			text-align: center;
 			margin-bottom: 0px;
 		}
@@ -128,7 +135,7 @@ footer {
 			left: 10%;
 			height: 20px;
 			font-size: 13px;
-			color: #000000;
+			color: #ffffff;
 			text-align: justify;
 		}
 		svg {
@@ -162,7 +169,7 @@ footer {
 		h4 {
 			position: relative;
 			font-weight: bold;
-			color: $blue_2;
+			color: #ffffff;
 			text-align: center;
 			margin-bottom: 30px;
 		}
@@ -172,7 +179,7 @@ footer {
 			left: 10%;
 			height: 20px;
 			font-size: 13px;
-			color: #000000;
+			color: #ffffff;
 			text-align: justify;
 		}
 		svg {
