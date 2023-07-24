@@ -8,7 +8,7 @@
 .cabeza {
 	position: sticky;
 	top: 0;
-	background-color: white;
+	background-color: $cian_1;
 	z-index: 100;
 	.logo {
 		width: 70px;
@@ -50,7 +50,7 @@
 			height: 38px;
 			font-size: 25px;
 			font-weight: bold;
-			color: $blue_1;
+			color: $blue_2;
 			text-align: center;
 			margin-bottom: 30px;
 		}
@@ -68,9 +68,38 @@
 			top: 90px;
 			width: 148px;
 			height: 148px;
+			color: $blue_2;
 		}
 	}
-	
+}
+
+.buscador {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 48px solid transparent;
+	.box {
+		position: relative;
+		background-color: $cian_1;
+		border-radius: 25px;
+		height: 120%;
+		width: 85%;
+		h5 {
+			position: relative;
+			top: 10px;
+			width: 100%;
+			height: 100%;
+			font-size: 32px;
+			font-weight: bold;
+			color: $blue_2;
+			text-align: center;
+		}
+	}
+}
+
+footer {
+	height: 200px;
+	background-color: #e4e9f0;
 }
 
 @media screen and (max-width: 992px) {
@@ -110,7 +139,6 @@
 			height: 148px;
 		}
 	}
-	
 }
 
 
@@ -155,7 +183,6 @@
 			height: 148px;
 		}
 	}
-	
 }
 
 
