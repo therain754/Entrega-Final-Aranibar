@@ -2,12 +2,18 @@
 .cabeza {
   position: sticky;
   top: 0;
-  background-color: #A6BBB6;
+  background-color: #4FA3E3;
   z-index: 100;
 }
 .cabeza .logo {
   width: 70px;
   height: 70px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.cabeza a {
+  color: white;
+  text-decoration: none;
 }
 
 .novedades img {
@@ -25,7 +31,7 @@
 }
 
 .consejos {
-  height: 48vh;
+  height: 58vh;
   top: 42px;
   position: relative;
 }
@@ -36,7 +42,6 @@
   border-radius: 16px;
   row-gap: 48px;
   margin-bottom: 42px;
-  align-items: center;
 }
 .consejos .consejo-box h4 {
   margin-top: 1.1rem;
@@ -228,78 +233,39 @@
   color: #191a1e;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .consejos {
-    width: 80%;
-    height: 330px;
+    height: auto;
     top: 28px;
-    position: relative;
-    display: flex;
-    align-items: center;
   }
-  .consejos h4 {
-    position: relative;
-    left: 10%;
-    top: -30px;
-    height: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 0px;
+  .consejos .consejo-box {
+    margin-bottom: 21px;
   }
-  .consejos p {
-    position: relative;
-    top: -10px;
-    width: 80%;
-    left: 10%;
-    height: 20px;
-    font-size: 13px;
-    color: #ffffff;
-    text-align: justify;
+  .consejos .consejo-box svg {
+    top: 84px;
+    margin-bottom: 42px;
   }
-  .consejos svg {
-    position: relative;
-    top: 58px;
-    left: 10%;
-    width: 148px;
-    height: 148px;
+  .section {
+    margin-bottom: 16vh;
+  }
+  .section .booking-cta {
+    display: none;
+  }
+  .section .search {
+    margin-top: 200px;
   }
 }
-@media screen and (max-width: 768px) {
-  .cabeza .logo {
-    width: 100px;
-    height: 100px;
-  }
-  .novedades img {
-    width: 100%;
-    height: 100%;
-  }
+@media screen and (max-width: 576px) {
   .consejos {
-    position: relative;
-    top: 28px;
+    top: auto;
   }
-  .consejos h4 {
-    position: relative;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
+  .consejos .consejo-box {
+    height: auto;
   }
-  .consejos p {
-    position: relative;
-    width: 80%;
-    left: 10%;
-    height: 20px;
-    font-size: 13px;
-    color: #ffffff;
-    text-align: justify;
+  .section {
+    margin-bottom: 11vh;
   }
-  .consejos svg {
-    position: relative;
-    top: 12vh;
-    left: 10%;
-    width: 148px;
-    height: 148px;
+  .section .search {
+    margin-top: 108px;
   }
 }/*# sourceMappingURL=style.css.map */
